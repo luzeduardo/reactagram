@@ -1,4 +1,4 @@
-function postComments(state = [], action) {
+const postComments = (state = [], action) => {
   switch (action.type) {
     case 'ADD_COMMENT':
       //return the new state with the new comment
@@ -22,7 +22,7 @@ function postComments(state = [], action) {
   }
 }
 
-function comments (state = [], action) {
+const comments = (state = [], action) => {
   if(typeof action.postId !== 'undefined') {
     return {
       //take the current state

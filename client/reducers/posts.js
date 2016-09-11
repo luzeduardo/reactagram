@@ -1,4 +1,4 @@
-function posts(state = [], action) {
+const posts = (state = [], action) => {
   switch (action.type) {
     case 'INCREMENT_LIKES':
     const i = action.index;
